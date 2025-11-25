@@ -10,14 +10,15 @@
 		<h1>NỘI THẤT AHAIR</h1>
 		<h2>Chất lượng 1 đằng - Giá cả 1 nẻo</h2>
 	</div>
-	<div id="navigation">
-		<ul>
-			<li><a href="/WEB_TEMPLATE/index.php">Home Page</a></li>
-			<li><a href="../php/register.php">Register</a></li>
-			<li><a href="view_users.php">View Users</a></li>
-			<li><a href="password.php">Change Password</a></li>
-			<li><a href="#">link five</a></li>
-		</ul>
+	<div class="floating-nav">
+		<nav class="nav-box">
+			<ul>
+				<li><a href="/phanmemmanguonmo/index.php" class="<?php if($current_page=='index') echo 'active'; ?>">Trang chủ</a></li>
+				<li><a href="/phanmemmanguonmo/about.php" class="<?php if($current_page=='about') echo 'active'; ?>">Giới thiệu</a></li>
+				<li><a href="/WEB_TEMPLATE/views/sanpham.php" class="<?php if($current_page=='sanpham') echo 'active'; ?>">Sản phẩm</a></li>
+				<li><a href="/phanmemmanguonmo/lienhe.php" class="<?php if($current_page=='lienhe') echo 'active'; ?>">Liên hệ</a></li>
+			</ul>
+		</nav>
 	</div>
 	<div id="content"><!-- Start of the page-specific content. -->
 <!-- Script 9.1 - header.html -->

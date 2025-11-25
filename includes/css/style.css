@@ -49,34 +49,51 @@ body {
 	text-align:right;
 }
 
-/* navigation */
-#navigation {
-	background:#fafafa;
-	border-right:1px solid #999;
-	margin:0 auto;
-	width:750px;
-	height:40px;
-	list-style:none;
+.floating-nav {
+    position: fixed;
+    top: 80px;                  /* cách top màn hình */
+    left: 20px;                 /* cách trái */
+    z-index: 999;               /* nổi lên trên */
 }
-#navigation li {
-	border-left:1px solid #999;
-	float:left;
-	width:149px;
-	list-style:none;
+
+.nav-box {
+    width: 180px;               /* chiều rộng ô */
+    background-color: #2c3e50;  /* màu nền */
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
-#navigation a {
-	color:#555;
-	display:block;
-	line-height:40px;
-	text-align:center;
+
+.nav-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-#navigation a:hover {
-	background:#e3e3e3;
-	color:#555;
+
+.nav-box ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    border-left: 4px solid transparent;
+    transition: background 0.25s, padding-left 0.25s, border-color 0.25s;
+    border-radius: 5px;
 }
-#navigation .active {
-	background:#e3e3e3;
-	color:#777;
+
+/* Hover */
+.nav-box ul li a:hover {
+    background-color: #34495e;
+    padding-left: 26px;
+    border-left-color: #e74c3c;
+}
+
+/* Active */
+.nav-box ul li a.active {
+    background-color: #34495e;
+    border-left-color: #e74c3c;
+    font-weight: 600;
+    padding-left: 26px;
 }
 
 /* content */

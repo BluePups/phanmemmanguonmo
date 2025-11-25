@@ -1,5 +1,6 @@
 <?php
 $page_title = "Thông Tin Sản Phẩm";
+$current_page = 'sanpham';
 
 require ('../php/mysqli_connect.php');
 
